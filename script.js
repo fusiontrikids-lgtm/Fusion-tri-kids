@@ -91,3 +91,49 @@ const url = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(me
 window.open(url, "_blank");
 
 });
+function inscribirWhatsApp() {
+
+    const apoderado = document.getElementById("apoderado").value;
+    const alumno = document.getElementById("alumno").value;
+    const edad = parseInt(document.getElementById("edadAlumno").value);
+    const plan = document.getElementById("plan").value;
+    const horario = document.getElementById("horario").value;
+
+    if (!apoderado || !alumno || !edad || !plan || !horario) {
+        alert("Por favor completa todos los datos.");
+        return;
+    }
+
+    let grupo = "";
+
+    if (edad >= 3 && edad <= 5) {
+        grupo = "Burbujitas";
+    } else if (edad >= 6 && edad <= 8) {
+        grupo = "Exploradores";
+    } else if (edad >= 9 && edad <= 13) {
+        grupo = "Navegantes";
+    } else {
+        alert("La edad debe estar entre 3 y 13 años.");
+        return;
+    }
+
+    const mensaje =
+        "Hola Fusión Tri Kids 👋\n\n" +
+        "Quiero solicitar una inscripción.\n\n" +
+        "Apoderado/a: " + apoderado + "\n" +
+        "Alumno/a: " + alumno + "\n" +
+        "Edad: " + edad + " años\n" +
+        "Grupo: " + grupo + "\n" +
+        "Plan: " + plan + "\n" +
+        "Horario: " + horario;
+
+    const numeroWhatsApp = "56950621684";
+
+    const url =
+        "https://wa.me/" +
+        numeroWhatsApp +
+        "?text=" +
+        encodeURIComponent(mensaje);
+
+    window.location.href = url;
+}
