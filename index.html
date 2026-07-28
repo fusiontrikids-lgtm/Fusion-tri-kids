@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">.
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -40,109 +40,6 @@
         </div>
 
     </header>
-
-    <section id="formulario-inscripcion" class="seccion">
-
-    <div class="contenedor">
-
-        <h2>INSCRIPCIÓN</h2>
-
-        <p class="subtitulo">
-            Completa tus datos y envíanos la solicitud por WhatsApp.
-        </p>
-
-        <form id="formInscripcion">
-
-            <input
-                type="text"
-                id="apoderado"
-                placeholder="Nombre del apoderado"
-                required
-            >
-
-            <input
-                type="text"
-                id="alumno"
-                placeholder="Nombre del alumno/a"
-                required
-            >
-
-            <input
-                type="number"
-                id="edadAlumno"
-                placeholder="Edad"
-                min="3"
-                max="13"
-                required
-                oninput="ActualizargrupoYHorarios()"
-
-
-               <div id="grupoAutomatico"></div>
-
-                <select id="plan" required>
-                    <option value="">Seleccionar plan</option>
-                    <option value="4 clases - $50.000">4 clases - $50.000</option>
-                    <option value="8 clases - $85.000">8 clases - $85.000</option>
-                    <option value="12 clases - $110.000">12 clases - $110.000</option>
-                </select>
-
-<select id="horario" required>
-    <option value="">Primero ingresa la edad</option>
-</select>
-
-            <select id="plan" required>
-
-                <option value="">
-                    Seleccionar plan
-                </option>
-
-                <option value="4 clases - $50.000">
-                    4 clases - $50.000
-                </option>
-
-                <option value="8 clases - $85.000">
-                    8 clases - $85.000
-                </option>
-
-                <option value="12 clases - $110.000">
-                    12 clases - $110.000
-                </option>
-
-            </select>
-
-            <select id="horario" required>
-
-                <option value="">
-                    Seleccionar horario
-                </option>
-
-                <option value="Lunes, Miércoles y Viernes 17:00 a 18:00">
-                    Lunes, Miércoles y Viernes 17:00 a 18:00
-                </option>
-
-                <option value="Lunes y Miércoles 19:00 a 20:00">
-                    Lunes y Miércoles 19:00 a 20:00
-                </option>
-
-                <option value="Sábado 14:30 a 15:30">
-                    Sábado 14:30 a 15:30
-                </option>
-
-            </select>
-
-            <button
-             type="button"
-             class="boton-inscripcion"
-            onclick="inscribirWhatsApp()"
->
-    INSCRIBIRME POR WHATSAPP
-</button>
-
-        </form>
-
-    </div>
-
-</section>
 
 
     <main>
@@ -205,9 +102,7 @@
 
                     <div class="tarjeta tarjeta-rosada">
 
-                        <div class="icono-grupo">
-                            🫧
-                        </div>
+                        <div class="icono-grupo">🫧</div>
 
                         <h3>BURBUJITAS</h3>
 
@@ -225,9 +120,7 @@
 
                     <div class="tarjeta tarjeta-naranjo">
 
-                        <div class="icono-grupo">
-                            🏊
-                        </div>
+                        <div class="icono-grupo">🏊</div>
 
                         <h3>EXPLORADORES</h3>
 
@@ -245,9 +138,7 @@
 
                     <div class="tarjeta tarjeta-amarilla">
 
-                        <div class="icono-grupo">
-                            🌊
-                        </div>
+                        <div class="icono-grupo">🌊</div>
 
                         <h3>NAVEGANTES</h3>
 
@@ -256,8 +147,8 @@
                         </p>
 
                         <p>
-                            Perfeccionamiento técnico, resistencia,
-                            coordinación y autonomía en el agua.
+                            Perfeccionamiento técnico,
+                            resistencia, coordinación y autonomía en el agua.
                         </p>
 
                     </div>
@@ -290,17 +181,11 @@
 
                         <div class="plan-contenido">
 
-                            <p>
-                                1 vez por semana
-                            </p>
+                            <p>1 vez por semana</p>
 
-                            <strong>
-                                $50.000
-                            </strong>
+                            <strong>$50.000</strong>
 
-                            <span>
-                                mensual
-                            </span>
+                            <span>mensual</span>
 
                         </div>
 
@@ -319,17 +204,11 @@
 
                         <div class="plan-contenido">
 
-                            <p>
-                                2 veces por semana
-                            </p>
+                            <p>2 veces por semana</p>
 
-                            <strong>
-                                $85.000
-                            </strong>
+                            <strong>$85.000</strong>
 
-                            <span>
-                                mensual
-                            </span>
+                            <span>mensual</span>
 
                         </div>
 
@@ -344,17 +223,11 @@
 
                         <div class="plan-contenido">
 
-                            <p>
-                                3 veces por semana
-                            </p>
+                            <p>3 veces por semana</p>
 
-                            <strong>
-                                $110.000
-                            </strong>
+                            <strong>$110.000</strong>
 
-                            <span>
-                                mensual
-                            </span>
+                            <span>mensual</span>
 
                         </div>
 
@@ -368,188 +241,264 @@
 
 
         <!-- HORARIOS -->
-    <section id="horarios" class="seccion horarios">
+        <section id="horarios" class="seccion horarios">
 
-    <div class="contenedor">
+            <div class="contenedor">
 
-        <h2>HORARIOS DE CLASES</h2>
+                <h2>HORARIOS DE CLASES</h2>
 
-        <p class="subtitulo">
-            Revisa el horario correspondiente según la edad de tu hijo/a.
-        </p>
-
-
-        <div class="horarios-grid">
-
-            <!-- BURBUJITAS -->
-            <div class="horario-card horario-burbujitas">
-
-                <div class="horario-edad">
-                    3 - 5
-                    <span>años</span>
-                </div>
-
-                <h3>BURBUJITAS</h3>
-
-                <p class="descripcion-horario">
-                    Introducción al agua y técnicas básicas de flotación.
+                <p class="subtitulo">
+                    Revisa el horario correspondiente según la edad de tu hijo/a.
                 </p>
 
-                <div class="bloque-horario">
+                <div class="horarios-grid">
 
-                    <strong>
-                        Lunes, Miércoles y Viernes
-                    </strong>
+                    <!-- BURBUJITAS -->
+                    <div class="horario-card horario-burbujitas">
 
-                    <p>
-                        17:00 a 18:00 hrs
-                    </p>
+                        <div class="horario-edad">
+                            3 - 5
+                            <span>años</span>
+                        </div>
+
+                        <h3>BURBUJITAS</h3>
+
+                        <p class="descripcion-horario">
+                            Introducción al agua y técnicas básicas de flotación.
+                        </p>
+
+                        <div class="bloque-horario">
+
+                            <strong>
+                                Lunes, Miércoles y Viernes
+                            </strong>
+
+                            <p>
+                                17:00 a 18:00 hrs
+                            </p>
+
+                        </div>
+
+                        <div class="bloque-horario">
+
+                            <strong>Sábado</strong>
+
+                            <p>
+                                14:30 a 15:30 hrs
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EXPLORADORES -->
+                    <div class="horario-card horario-exploradores">
+
+                        <div class="horario-edad">
+                            6 - 8
+                            <span>años</span>
+                        </div>
+
+                        <h3>EXPLORADORES</h3>
+
+                        <p class="descripcion-horario">
+                            Estilos básicos de natación y seguridad en el agua.
+                        </p>
+
+                        <div class="bloque-horario">
+
+                            <strong>
+                                Lunes, Miércoles y Viernes
+                            </strong>
+
+                            <p>
+                                17:00 a 18:00 hrs
+                            </p>
+
+                        </div>
+
+                        <div class="bloque-horario">
+
+                            <strong>
+                                Lunes y Miércoles
+                            </strong>
+
+                            <p>
+                                19:00 a 20:00 hrs
+                            </p>
+
+                        </div>
+
+                        <div class="bloque-horario">
+
+                            <strong>Sábado</strong>
+
+                            <p>
+                                14:30 a 15:30 hrs
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NAVEGANTES -->
+                    <div class="horario-card horario-navegantes">
+
+                        <div class="horario-edad">
+                            9 - 13
+                            <span>años</span>
+                        </div>
+
+                        <h3>NAVEGANTES</h3>
+
+                        <p class="descripcion-horario">
+                            Perfeccionamiento de estilos y técnicas avanzadas.
+                        </p>
+
+                        <div class="bloque-horario">
+
+                            <strong>
+                                Lunes y Miércoles
+                            </strong>
+
+                            <p>
+                                19:00 a 20:00 hrs
+                            </p>
+
+                        </div>
+
+                        <div class="bloque-horario">
+
+                            <strong>Sábado</strong>
+
+                            <p>
+                                14:30 a 15:30 hrs
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
-                <div class="bloque-horario">
 
-                    <strong>
-                        Sábado
-                    </strong>
+                <!-- BOTÓN WHATSAPP -->
+                <div class="contenedor-whatsapp">
+
+                    <h3>
+                        ¿Quieres reservar un cupo?
+                    </h3>
 
                     <p>
-                        14:30 a 15:30 hrs
+                        Escríbenos directamente por WhatsApp
                     </p>
+
+                    <a
+                        href="https://wa.me/56950621684?text=Hola%20Fusión%20Tri%20Kids,%20quisiera%20información%20sobre%20las%20clases%20de%20natación."
+                        target="_blank"
+                        class="boton-whatsapp"
+                    >
+                        💬 Hablar por WhatsApp
+                    </a>
 
                 </div>
 
             </div>
 
+        </section>
 
-            <!-- EXPLORADORES -->
-            <div class="horario-card horario-exploradores">
 
-                <div class="horario-edad">
-                    6 - 8
-                    <span>años</span>
-                </div>
+        <!-- INSCRIPCIÓN -->
+        <section id="inscripcion" class="seccion">
 
-                <h3>EXPLORADORES</h3>
+            <div class="contenedor">
 
-                <p class="descripcion-horario">
-                    Estilos básicos de natación y seguridad en el agua.
+                <h2>INSCRIPCIÓN</h2>
+
+                <p class="subtitulo">
+                    Completa tus datos y envíanos la solicitud por WhatsApp.
                 </p>
 
 
-                <div class="bloque-horario">
+                <form id="formInscripcion">
 
-                    <strong>
-                        Lunes, Miércoles y Viernes
-                    </strong>
+                    <input
+                        type="text"
+                        id="apoderado"
+                        placeholder="Nombre del apoderado"
+                        required
+                    >
 
-                    <p>
-                        17:00 a 18:00 hrs
-                    </p>
+                    <input
+                        type="text"
+                        id="alumno"
+                        placeholder="Nombre del alumno/a"
+                        required
+                    >
 
-                </div>
-
-
-                <div class="bloque-horario">
-
-                    <strong>
-                        Lunes y Miércoles
-                    </strong>
-
-                    <p>
-                        19:00 a 20:00 hrs
-                    </p>
-
-                </div>
-
-
-                <div class="bloque-horario">
-
-                    <strong>
-                        Sábado
-                    </strong>
-
-                    <p>
-                        14:30 a 15:30 hrs
-                    </p>
-
-                </div>
-
-            </div>
+                    <input
+                        type="number"
+                        id="edadAlumno"
+                        placeholder="Edad"
+                        min="3"
+                        max="13"
+                        required
+                        oninput="actualizarGrupoYHorarios()"
+                    >
 
 
-            <!-- NAVEGANTES -->
-            <div class="horario-card horario-navegantes">
-
-                <div class="horario-edad">
-                    9 - 13
-                    <span>años</span>
-                </div>
-
-                <h3>NAVEGANTES</h3>
-
-                <p class="descripcion-horario">
-                    Perfeccionamiento de estilos y técnicas avanzadas.
-                </p>
+                    <!-- AQUÍ APARECE EL GRUPO -->
+                    <div id="grupoAutomatico"></div>
 
 
-                <div class="bloque-horario">
+                    <select id="plan" required>
 
-                    <strong>
-                        Lunes y Miércoles
-                    </strong>
+                        <option value="">
+                            Seleccionar plan
+                        </option>
 
-                    <p>
-                        19:00 a 20:00 hrs
-                    </p>
+                        <option value="4 clases - $50.000">
+                            4 clases - $50.000
+                        </option>
 
-                </div>
+                        <option value="8 clases - $85.000">
+                            8 clases - $85.000
+                        </option>
+
+                        <option value="12 clases - $110.000">
+                            12 clases - $110.000
+                        </option>
+
+                    </select>
 
 
-                <div class="bloque-horario">
+                    <select id="horario" required>
 
-                    <strong>
-                        Sábado
-                    </strong>
+                        <option value="">
+                            Primero ingresa la edad
+                        </option>
 
-                    <p>
-                        14:30 a 15:30 hrs
-                    </p>
+                    </select>
 
-                </div>
+
+                    <button
+                        type="button"
+                        class="boton-inscripcion"
+                        onclick="inscribirWhatsApp()"
+                    >
+                        INSCRIBIRME POR WHATSAPP
+                    </button>
+
+                </form>
 
             </div>
 
-        </div>
+        </section>
 
+    </main>
 
-        <!-- BOTÓN WHATSAPP -->
-
-        <div class="contenedor-whatsapp">
-
-            <h3>
-                ¿Quieres reservar un cupo?
-            </h3>
-
-            <p>
-                Escríbenos directamente por WhatsApp
-            </p>
-
-            <a
-                href="https://wa.me/56950621684?text=Hola%20Fusión%20Tri%20Kids,%20quisiera%20información%20sobre%20las%20clases%20de%20natación."
-                target="_blank"
-                class="boton-whatsapp"
-            >
-
-                💬 Hablar por WhatsApp
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
 
     <!-- FOOTER -->
     <footer>
@@ -591,9 +540,7 @@
 
 
         <div class="footer-copy">
-
             © 2026 Fusión Tri Kids
-
         </div>
 
     </footer>
