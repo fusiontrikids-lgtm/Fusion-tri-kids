@@ -137,3 +137,64 @@ function inscribirWhatsApp() {
 
     window.location.href = url;
 }
+function actualizarGrupoYHorarios() {
+
+    const edad = parseInt(document.getElementById("edadAlumno").value);
+    const grupoAutomatico = document.getElementById("grupoAutomatico");
+    const horario = document.getElementById("horario");
+
+    let grupo = "";
+    let opciones = [];
+
+    if (edad >= 3 && edad <= 5) {
+
+        grupo = "Burbujitas";
+
+        opciones = [
+            "Lunes, Miércoles y Viernes 17:00 a 18:00 hrs",
+            "Sábado 14:30 a 15:30 hrs"
+        ];
+
+    } else if (edad >= 6 && edad <= 8) {
+
+        grupo = "Exploradores";
+
+        opciones = [
+            "Lunes, Miércoles y Viernes 17:00 a 18:00 hrs",
+            "Lunes y Miércoles 19:00 a 20:00 hrs",
+            "Sábado 14:30 a 15:30 hrs"
+        ];
+
+    } else if (edad >= 9 && edad <= 13) {
+
+        grupo = "Navegantes";
+
+        opciones = [
+            "Lunes y Miércoles 19:00 a 20:00 hrs",
+            "Sábado 14:30 a 15:30 hrs"
+        ];
+
+    } else {
+
+        grupoAutomatico.innerHTML = "";
+        horario.innerHTML =
+            '<option value="">Primero ingresa una edad entre 3 y 13 años</option>';
+
+        return;
+    }
+
+    grupoAutomatico.innerHTML =
+        "<strong>Grupo: " + grupo + "</strong>";
+
+    horario.innerHTML =
+        '<option value="">Seleccionar horario</option>';
+
+    opciones.forEach(function (opcion) {
+
+        horario.innerHTML +=
+            '<option value="' + opcion + '">' +
+            opcion +
+            '</option>';
+
+    });
+}

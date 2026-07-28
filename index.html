@@ -74,7 +74,21 @@
                 min="3"
                 max="13"
                 required
-            >
+                oninput="ActualizargrupoYHorarios()"
+
+
+               <div id="grupoAutomatico"></div>
+
+                <select id="plan" required>
+                    <option value="">Seleccionar plan</option>
+                    <option value="4 clases - $50.000">4 clases - $50.000</option>
+                    <option value="8 clases - $85.000">8 clases - $85.000</option>
+                    <option value="12 clases - $110.000">12 clases - $110.000</option>
+                </select>
+
+<select id="horario" required>
+    <option value="">Primero ingresa la edad</option>
+</select>
 
             <select id="plan" required>
 
