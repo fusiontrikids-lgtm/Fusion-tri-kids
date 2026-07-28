@@ -961,3 +961,63 @@ footer {
         text-align: center;
     }
 }
+#formulario-inscripcion {
+    background: #fff7ef;
+}
+
+#formInscripcion {
+    max-width: 600px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+#formInscripcion input,
+#formInscripcion select {
+    width: 100%;
+
+    padding: 15px 18px;
+
+    border: 2px solid #ffd2bd;
+
+    border-radius: 15px;
+
+    font-size: 1rem;
+
+    outline: none;
+
+    background: white;
+}
+
+#formInscripcion input:focus,
+#formInscripcion select:focus {
+    border-color: #ff6a00;
+}
+
+.boton-inscripcion {
+    border: none;
+
+    background: #25D366;
+
+    color: white;
+
+    padding: 16px 25px;
+
+    border-radius: 30px;
+
+    font-size: 1.05rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.boton-inscripcion:hover {
+    transform: translateY(-3px);
+    background: #1ebe5d;
+}

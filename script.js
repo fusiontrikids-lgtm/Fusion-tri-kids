@@ -49,3 +49,45 @@ edadSelect.addEventListener("change", function () {
     `;
 
 });
+const formInscripcion = document.getElementById("formInscripcion");
+
+formInscripcion.addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    const apoderado = document.getElementById("apoderado").value;
+    const alumno = document.getElementById("alumno").value;
+    const edad = parseInt(document.getElementById("edadAlumno").value);
+    const plan = document.getElementById("plan").value;
+    const horario = document.getElementById("horario").value;
+
+    let grupo = "";
+
+    if (edad >= 3 && edad <= 5) {
+        grupo = "Burbujitas";
+    } else if (edad >= 6 && edad <= 8) {
+        grupo = "Exploradores";
+    } else if (edad >= 9 && edad <= 13) {
+        grupo = "Navegantes";
+    }
+
+    const mensaje = `
+Hola Fusión Tri Kids 👋
+
+Quiero solicitar una inscripción.
+
+Apoderado/a: ${apoderado}
+Alumno/a: ${alumno}
+Edad: ${edad} años
+Grupo: ${grupo}
+Plan: ${plan}
+Horario: ${horario}
+`;
+
+   const numeroWhatsApp = "56950621684";
+
+const url = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(mensaje);
+
+window.open(url, "_blank");
+
+});
