@@ -20,6 +20,7 @@ function actualizarGrupoYHorarios() {
 
         opciones = [
             "Lunes, Miércoles y Viernes 17:00 a 18:00 hrs",
+            "Lunes, Miércoles y Viernes 18:00 a 19:00 hrs",
             "Sábado 14:30 a 15:30 hrs"
         ];
 
@@ -29,6 +30,7 @@ function actualizarGrupoYHorarios() {
 
         opciones = [
             "Lunes, Miércoles y Viernes 17:00 a 18:00 hrs",
+            "Lunes, Miércoles y Viernes 18:00 a 19:00 hrs",
             "Lunes y Miércoles 19:00 a 20:00 hrs",
             "Sábado 14:30 a 15:30 hrs"
         ];
@@ -64,16 +66,17 @@ function actualizarGrupoYHorarios() {
         '<option value="">Seleccionar horario</option>';
 
 
-    opciones.forEach(function (opcion) {
+    opciones.forEach(function(opcion) {
 
-        horario.innerHTML +=
-            '<option value="' +
-            opcion +
-            '">' +
-            opcion +
-            '</option>';
+        const option = document.createElement("option");
+
+        option.value = opcion;
+        option.textContent = opcion;
+
+        horario.appendChild(option);
 
     });
+
 }
 
 
@@ -87,7 +90,9 @@ function inscribirWhatsApp() {
         document.getElementById("alumno").value.trim();
 
     const edad =
-        parseInt(document.getElementById("edadAlumno").value);
+        parseInt(
+            document.getElementById("edadAlumno").value
+        );
 
     const plan =
         document.getElementById("plan").value;
@@ -155,4 +160,28 @@ function inscribirWhatsApp() {
 
 
     window.open(url, "_blank");
+}
+
+function copiarDatosTransferencia() {
+
+    const datos =
+        "Fusión Tri Kids\n\n" +
+        "Titular: María Soledad Ibáñez Villagrán\n" +
+        "RUT: 19.763.738-2\n" +
+        "Entidad: Mercado Pago\n" +
+        "Tipo de cuenta: Cuenta Vista\n" +
+        "Número de cuenta: 1037753644";
+
+    navigator.clipboard.writeText(datos)
+        .then(function() {
+
+            alert("Datos de transferencia copiados.");
+
+        })
+        .catch(function() {
+
+            alert("No se pudieron copiar los datos.");
+
+        });
+
 }
