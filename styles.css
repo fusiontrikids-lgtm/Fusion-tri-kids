@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +17,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 120px;
 }
 
 body {
@@ -24,6 +26,7 @@ body {
     color: var(--oscuro);
     line-height: 1.6;
 }
+
 
 /* =========================
    HEADER
@@ -37,30 +40,30 @@ body {
     );
 
     padding: 10px 5%;
-
     position: sticky;
     top: 0;
-
     z-index: 1000;
-
     border-bottom: 5px solid var(--amarillo);
 }
 
 .header-contenido {
     max-width: 1300px;
     margin: auto;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     gap: 30px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 .logo {
     width: auto;
     height: 85px;
-
     display: block;
 }
 
@@ -68,20 +71,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
     gap: 25px;
-
     flex: 1;
 }
 
 .menu a {
     color: white;
-
     text-decoration: none;
-
     font-size: 0.86rem;
     font-weight: bold;
-
     transition: 0.3s;
 }
 
@@ -91,25 +89,17 @@ body {
 
 .btn-inscribirme {
     background: var(--amarillo);
-
     color: var(--oscuro);
-
     padding: 12px 22px;
-
     border-radius: 30px;
-
     text-decoration: none;
-
     font-weight: bold;
-
     white-space: nowrap;
-
     transition: 0.3s;
 }
 
 .btn-inscribirme:hover {
     transform: translateY(-2px);
-
     box-shadow: 0 7px 18px rgba(0,0,0,0.2);
 }
 
@@ -120,23 +110,17 @@ body {
 
 .hero {
     min-height: 560px;
-
     background-image: url("img/portada.jpeg");
-
     background-size: cover;
-
     background-position: center;
-
     position: relative;
-
     display: flex;
-
     align-items: center;
+    background-color: #174a65;
 }
 
 .hero-overlay {
     position: absolute;
-
     inset: 0;
 
     background: linear-gradient(
@@ -149,91 +133,65 @@ body {
 
 .hero-contenido {
     width: 90%;
-
     max-width: 1200px;
-
     margin: auto;
-
     position: relative;
-
     z-index: 2;
 }
 
 .hero-texto {
     max-width: 650px;
-
     color: white;
 }
 
 .hero-etiqueta {
     display: inline-block;
-
     background: var(--amarillo);
-
     color: var(--oscuro);
-
     padding: 6px 15px;
-
     border-radius: 25px;
-
     font-weight: bold;
-
     margin-bottom: 20px;
 }
 
 .hero h1 {
     font-size: 4rem;
-
     line-height: 0.95;
-
     font-weight: 900;
-
     margin-bottom: 25px;
 }
 
 .hero h1 span {
     color: var(--amarillo);
-
     display: block;
-
     font-size: 5.1rem;
 }
 
 .hero h1 strong {
     color: var(--rosado);
-
     display: block;
-
     font-size: 3.2rem;
 }
 
 .hero-descripcion {
     max-width: 540px;
-
     font-size: 1.25rem;
-
     font-weight: bold;
-
     margin-bottom: 30px;
 }
 
 .hero-botones {
     display: flex;
-
     gap: 15px;
-
     flex-wrap: wrap;
 }
 
 .btn {
+    display: inline-block;
     padding: 14px 25px;
-
     border-radius: 30px;
-
     text-decoration: none;
-
     font-weight: bold;
-
     transition: 0.3s;
 }
 
@@ -243,13 +201,11 @@ body {
 
 .btn-rosado {
     background: var(--rosado);
-
     color: white;
 }
 
 .btn-amarillo {
     background: var(--amarillo);
-
     color: var(--oscuro);
 }
 
@@ -264,23 +220,18 @@ body {
 
 .contenedor {
     max-width: 1200px;
-
     margin: auto;
 }
 
 .seccion h2 {
     text-align: center;
-
     font-size: 2.3rem;
-
     margin-bottom: 8px;
 }
 
 .subtitulo {
     text-align: center;
-
     color: var(--gris);
-
     margin-bottom: 40px;
 }
 
@@ -295,23 +246,16 @@ body {
 
 .contenedor-grupos {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 30px;
 }
 
 .tarjeta {
     background: white;
-
     border-radius: 22px;
-
     padding: 30px;
-
     text-align: center;
-
     box-shadow: 0 8px 25px rgba(0,0,0,0.07);
-
     transition: 0.3s;
 }
 
@@ -333,13 +277,11 @@ body {
 
 .icono-grupo {
     font-size: 3rem;
-
     margin-bottom: 12px;
 }
 
 .tarjeta h3 {
     font-size: 1.35rem;
-
     margin-bottom: 5px;
 }
 
@@ -357,8 +299,14 @@ body {
 
 .edad {
     font-weight: bold;
-
     margin-bottom: 15px;
+}
+
+.nota-adultos {
+    text-align: center;
+    margin-top: 30px;
+    color: var(--gris);
+    font-weight: bold;
 }
 
 
@@ -376,29 +324,19 @@ body {
 
 .contenedor-planes {
     max-width: 900px;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 22px;
 }
 
 .plan {
     background: white;
-
     border-radius: 18px;
-
     overflow: hidden;
-
     text-align: center;
-
     position: relative;
-
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-
     transition: 0.3s;
 }
 
@@ -408,11 +346,8 @@ body {
 
 .plan-header {
     padding: 15px;
-
     font-weight: bold;
-
     color: white;
-
     font-size: 1.1rem;
 }
 
@@ -426,7 +361,6 @@ body {
 
 .plan-amarillo {
     background: var(--amarillo);
-
     color: var(--oscuro);
 }
 
@@ -436,17 +370,13 @@ body {
 
 .plan-contenido strong {
     display: block;
-
     font-size: 2rem;
-
     color: var(--naranjo);
-
     margin: 10px 0 3px;
 }
 
 .plan-contenido span {
     color: var(--gris);
-
     font-size: 0.9rem;
 }
 
@@ -460,22 +390,14 @@ body {
 
 .recomendado {
     position: absolute;
-
     top: 0;
     right: 0;
-
     background: var(--amarillo);
-
     color: var(--oscuro);
-
     font-size: 0.65rem;
-
     font-weight: bold;
-
     padding: 5px 10px;
-
     border-bottom-left-radius: 10px;
-
     z-index: 2;
 }
 
@@ -500,148 +422,95 @@ body {
 .horarios-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
     gap: 25px;
-
     max-width: 1100px;
-
     margin: auto;
 }
 
-
-/* TARJETAS */
-
 .horario-card {
-
     background: #1a1a1a;
-
     border-radius: 25px;
-
     padding: 30px;
-
     text-align: center;
-
     position: relative;
-
     box-shadow: 0 10px 30px rgba(0,0,0,0.30);
-
     transition: 0.3s;
 }
 
-
 .horario-card:hover {
-
     transform: translateY(-8px);
 }
 
-
-/* EDAD */
-
 .horario-edad {
-
     font-size: 2.8rem;
-
     font-weight: 900;
-
     margin-bottom: 10px;
 }
 
-
 .horario-edad span {
-
     display: block;
-
     font-size: 1rem;
 }
 
-
-/* BURBUJITAS */
-
 .horario-burbujitas {
-
     border-top: 8px solid #ffd600;
 }
 
 .horario-burbujitas h3,
 .horario-burbujitas strong {
-
     color: #ffd600;
 }
 
-
-/* EXPLORADORES */
-
 .horario-exploradores {
-
     border-top: 8px solid #ff6a00;
 }
 
 .horario-exploradores h3,
 .horario-exploradores strong {
-
     color: #ff6a00;
 }
 
-
-/* NAVEGANTES */
-
 .horario-navegantes {
-
     border-top: 8px solid #ff4d86;
 }
 
 .horario-navegantes h3,
 .horario-navegantes strong {
-
     color: #ff4d86;
 }
 
-
-/* TÍTULOS */
-
 .horario-card h3 {
-
     font-size: 1.5rem;
-
     margin-bottom: 15px;
 }
 
-
 .descripcion-horario {
-
     color: #dddddd;
-
     margin-bottom: 25px;
-
     min-height: 70px;
 }
 
-
-/* BLOQUES HORARIOS */
-
 .bloque-horario {
-
     margin-top: 18px;
-
     padding-top: 15px;
-
     border-top: 1px solid #444;
 }
 
-
 .bloque-horario strong {
-
     display: block;
-
     font-size: 1rem;
 }
 
-
 .bloque-horario p {
-
     font-size: 1.1rem;
-
     margin-top: 3px;
+}
+
+.horarios-adultos {
+    text-align: center;
+    margin-top: 30px;
+    color: var(--amarillo);
+    font-weight: bold;
 }
 
 
@@ -650,11 +519,8 @@ body {
 ========================= */
 
 .contenedor-whatsapp {
-
     max-width: 650px;
-
     margin: 50px auto 0;
-
     text-align: center;
 
     background: linear-gradient(
@@ -664,162 +530,213 @@ body {
     );
 
     padding: 35px;
-
     border-radius: 25px;
 }
 
-
 .contenedor-whatsapp h3 {
-
     font-size: 1.8rem;
-
     margin-bottom: 5px;
 }
 
-
 .contenedor-whatsapp p {
-
     margin-bottom: 20px;
 }
 
-
 .boton-whatsapp {
-
     display: inline-block;
-
     background: #25D366;
-
     color: white;
-
     padding: 16px 30px;
-
     border-radius: 35px;
-
     text-decoration: none;
-
     font-size: 1.1rem;
-
     font-weight: bold;
-
     transition: 0.3s;
-
     box-shadow: 0 8px 20px rgba(0,0,0,0.20);
 }
 
-
 .boton-whatsapp:hover {
-
     background: #1ebe5d;
-
     transform: translateY(-3px);
 }
 
 
-.numero-whatsapp {
+/* =========================
+   FORMULARIO INSCRIPCIÓN
+========================= */
 
-    margin-top: 15px;
+#formulario-inscripcion {
+    background: #fff7ef;
+}
 
-    margin-bottom: 0 !important;
+#formInscripcion {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
+#formInscripcion input,
+#formInscripcion select {
+    width: 100%;
+    padding: 15px 18px;
+    border: 2px solid #ffd2bd;
+    border-radius: 15px;
+    font-size: 1rem;
+    outline: none;
+    background: white;
+    color: var(--oscuro);
+}
+
+#formInscripcion input:focus,
+#formInscripcion select:focus {
+    border-color: var(--naranjo);
+}
+
+#formInscripcion select:disabled {
+    background: #f1f1f1;
+    color: #777777;
+    cursor: not-allowed;
+}
+
+.boton-inscripcion {
+    border: none;
+    background: #25D366;
+    color: white;
+    padding: 16px 25px;
+    border-radius: 30px;
+    font-size: 1.05rem;
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
+.boton-inscripcion:hover {
+    transform: translateY(-3px);
+    background: #1ebe5d;
+}
+
+
+/* =========================
+   GRUPO AUTOMÁTICO
+========================= */
+
+.grupo-detectado {
+    background: linear-gradient(
+        90deg,
+        #fff0e4,
+        #ffe8ef
+    );
+
+    color: var(--oscuro);
+    padding: 18px 22px;
+    border-radius: 15px;
+    border-left: 5px solid var(--naranjo);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.grupo-detectado strong {
+    color: var(--naranjo);
     font-size: 1.15rem;
 }
 
 
-/* CELULAR */
-
-@media (max-width: 900px) {
-
-    .horarios-grid {
-
-        grid-template-columns: 1fr;
-    }
-
-}
-
 /* =========================
-   INSCRIPCIÓN
+   SELECCIÓN DE DÍAS Y HORARIOS
 ========================= */
 
-.inscripcion {
-    padding: 40px 5%;
-
-    background: linear-gradient(
-        90deg,
-        var(--rosado),
-        var(--naranjo)
-    );
-
-    color: white;
-}
-
-.inscripcion-contenido {
-    max-width: 1200px;
-
-    margin: auto;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 35px;
-
-    flex-wrap: wrap;
-}
-
-.inscripcion-texto {
-    max-width: 500px;
-}
-
-.inscripcion-texto h2 {
-    font-size: 1.7rem;
-}
-
-#edad {
-    min-width: 250px;
-
-    padding: 14px 20px;
-
-    border: none;
-
-    border-radius: 30px;
-
-    font-size: 1rem;
-
-    outline: none;
-}
-
-#resultado {
+#horario {
     width: 100%;
+}
 
+#horario h3 {
+    color: var(--oscuro);
+    font-size: 1.35rem;
+    margin: 15px 0 8px;
     text-align: center;
 }
 
-.resultado-grupo {
-    background: white;
-
-    color: var(--oscuro);
-
-    max-width: 600px;
-
-    margin: 20px auto 0;
-
-    padding: 25px;
-
-    border-radius: 20px;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+.ayuda {
+    color: var(--gris);
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-.resultado-grupo h3 {
+.selector-horario {
+    background: var(--blanco);
+    border: 2px solid #ffd2bd;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.selector-horario:hover {
+    border-color: var(--naranjo);
+    box-shadow: 0 5px 18px rgba(255,106,0,0.10);
+}
+
+.selector-horario label {
+    display: block;
     color: var(--rosado);
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+}
 
-    font-size: 1.8rem;
+#formInscripcion .selector-horario select {
+    margin-bottom: 10px;
+    background: #fffaf6;
+    border: 2px solid #ffd2bd;
+    cursor: pointer;
+}
 
-    margin: 8px 0;
+#formInscripcion .selector-horario select:focus {
+    border-color: var(--naranjo);
+}
+
+#formInscripcion .selector-horario select:disabled {
+    background: #f1f1f1;
+    color: #777777;
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   RESUMEN DE INSCRIPCIÓN
+========================= */
+
+#resumenSeleccion {
+    width: 100%;
+}
+
+.resumen {
+    background: linear-gradient(
+        135deg,
+        #fff0e4,
+        #ffe8ef
+    );
+
+    padding: 22px;
+    border-radius: 18px;
+    border: 2px solid #ffd2bd;
+    margin-top: 15px;
+}
+
+.resumen strong {
+    display: block;
+    color: var(--naranjo);
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+}
+
+.resumen p {
+    color: var(--oscuro);
+    font-size: 0.95rem;
+    margin-bottom: 8px;
 }
 
 
@@ -829,29 +746,21 @@ body {
 
 footer {
     background: var(--oscuro);
-
     color: white;
-
     padding: 35px 5% 15px;
 }
 
 .footer-contenido {
     max-width: 1200px;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 40px;
-
     align-items: center;
 }
 
 .footer-logo img {
     height: 80px;
-
     width: auto;
 }
 
@@ -861,36 +770,28 @@ footer {
 
 .footer-info p {
     color: #cccccc;
-
     font-size: 0.9rem;
 }
 
 .footer-copy {
     max-width: 1200px;
-
     margin: 25px auto 0;
-
     border-top: 1px solid #444;
-
     padding-top: 15px;
-
     text-align: center;
-
     color: #aaaaaa;
-
     font-size: 0.8rem;
 }
 
 
 /* =========================
-   CELULAR
+   CELULARES Y TABLETS
 ========================= */
 
 @media (max-width: 900px) {
 
     .header-contenido {
         flex-direction: column;
-
         gap: 10px;
     }
 
@@ -900,7 +801,6 @@ footer {
 
     .menu {
         gap: 12px;
-
         flex-wrap: wrap;
     }
 
@@ -922,7 +822,6 @@ footer {
 
     .hero-texto {
         text-align: center;
-
         margin: auto;
     }
 
@@ -961,63 +860,102 @@ footer {
         text-align: center;
     }
 }
-#formulario-inscripcion {
-    background: #fff7ef;
+
+
+/* =========================
+   CELULARES PEQUEÑOS
+========================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 10px 3%;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .hero {
+        min-height: 460px;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero h1 span {
+        font-size: 3rem;
+    }
+
+    .hero h1 strong {
+        font-size: 1.8rem;
+    }
+
+    .hero-descripcion {
+        font-size: 1rem;
+    }
+
+    .seccion {
+        padding: 55px 5%;
+    }
+
+    .seccion h2 {
+        font-size: 1.8rem;
+    }
+
+    .selector-horario {
+        padding: 15px;
+    }
+
+    .grupo-detectado {
+        padding: 15px;
+    }
+
+    .resumen {
+        padding: 18px;
+    }
+
+    #horario h3 {
+        font-size: 1.15rem;
+    }
+
+    #formInscripcion input,
+    #formInscripcion select {
+        font-size: 16px;
+    }
+
+    .horario-card {
+        padding: 25px 20px;
+    }
 }
 
-#formInscripcion {
-    max-width: 600px;
-    margin: auto;
+/* =========================
+   TARJETA ADULTOS
+========================= */
 
-    display: flex;
-    flex-direction: column;
+.horario-adultos {
 
-    gap: 15px;
-}
+    max-width: 350px;
 
-#formInscripcion input,
-#formInscripcion select {
-    width: 100%;
+    margin: 35px auto 0;
 
-    padding: 15px 18px;
+    border-top: 8px solid var(--amarillo);
 
-    border: 2px solid #ffd2bd;
-
-    border-radius: 15px;
-
-    font-size: 1rem;
-
-    outline: none;
-
-    background: white;
-}
-
-#formInscripcion input:focus,
-#formInscripcion select:focus {
-    border-color: #ff6a00;
-}
-
-.boton-inscripcion {
-    border: none;
-
-    background: #25D366;
+    background: #1a1a1a;
 
     color: white;
 
-    padding: 16px 25px;
-
-    border-radius: 30px;
-
-    font-size: 1.05rem;
-
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition: 0.3s;
+    text-align: center;
 }
 
-.boton-inscripcion:hover {
-    transform: translateY(-3px);
-    background: #1ebe5d;
+.horario-adultos h3,
+.horario-adultos strong {
+
+    color: var(--amarillo);
+}
+
+.horario-adultos .horario-edad {
+
+    color: white;
 }

@@ -1,581 +1,1127 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Fusión Tri Kids | Natación Infantil</title>
-
-    <link rel="stylesheet" href="styles.css">
+    <title>Fusión Tri Kids | Natación</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
+<!-- =========================
+     HEADER
+========================= -->
 
-        <div class="header-contenido">
+<header class="header" id="inicio">
 
-            <a href="#inicio">
-                <img
-                    src="img/logo.png.png"
-                    alt="Fusión Tri Kids"
-                    class="logo"
-                >
-            </a>
+    <div class="header-contenido">
 
-            <nav class="menu">
-                <a href="#inicio">INICIO</a>
-                <a href="#grupos">GRUPOS</a>
-                <a href="#planes">PLANES</a>
-                <a href="#horarios">HORARIOS</a>
-                <a href="#inscripcion">INSCRIPCIÓN</a>
-            
-            </nav>
+        <a href="#inicio" class="marca">
+            <img src="./img/logo.png.png"
+                 alt="Fusión Tri Kids"
+                 class="logo">
+        </a>
 
-            <a href="#inscripcion" class="btn-inscribirme">
-                INSCRIBIRME
-            </a>
+        <nav class="menu">
+            <a href="#inicio">INICIO</a>
+            <a href="#grupos">GRUPOS</a>
+            <a href="#planes">PLANES</a>
+            <a href="#horarios">HORARIOS</a>
+            <a href="#formulario-inscripcion">INSCRIPCIÓN</a>
+        </nav>
+
+        <a href="#formulario-inscripcion"
+           class="btn-inscribirme">
+            INSCRIBIRME
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     PORTADA
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-contenido">
+
+        <div class="hero-texto">
+
+            <span class="hero-etiqueta">
+                NATACIÓN INFANTIL
+            </span>
+
+            <h1>
+                NADAR ES
+                <span>CRECER</span>
+                <strong>CON CONFIANZA</strong>
+            </h1>
+
+            <p class="hero-descripcion">
+                Clases de natación para niños y niñas
+                de 3 a 13 años, organizadas por edad
+                y etapa de aprendizaje.
+            </p>
+
+            <div class="hero-botones">
+
+                <a href="#grupos" class="btn btn-rosado">
+                    CONOCER GRUPOS
+                </a>
+
+                <a href="#formulario-inscripcion"
+                   class="btn btn-amarillo">
+                    CONSULTAR CUPOS
+                </a>
+
+            </div>
 
         </div>
 
-    </header>
+    </div>
+
+</section>
 
 
-    <main>
+<!-- =========================
+     GRUPOS
+========================= -->
 
-        <!-- PORTADA -->
-        <section class="hero" id="inicio">
+<section class="seccion" id="grupos">
 
-            <div class="hero-overlay"></div>
+    <div class="contenedor">
 
-            <div class="hero-contenido">
+        <h2>NUESTROS GRUPOS</h2>
 
-                <div class="hero-texto">
+        <p class="subtitulo">
+            Aprender a nadar es una experiencia
+            diferente para cada edad.
+        </p>
 
-                    <p class="hero-etiqueta">
-                        NATACIÓN INFANTIL
-                    </p>
+        <div class="contenedor-grupos">
 
-                    <h1>
-                        NADAR ES
-                        <span>CRECER</span>
-                        <strong>CON CONFIANZA</strong>
-                    </h1>
+            <div class="tarjeta tarjeta-rosada">
 
-                    <p class="hero-descripcion">
-                        Clases de natación para niños y niñas
-                        de 3 a 13 años, organizadas por edad y nivel.
-                    </p>
+                <div class="icono-grupo">🫧</div>
 
-                    <div class="hero-botones">
+                <h3>BURBUJITAS</h3>
 
-                        <a href="#grupos" class="btn btn-rosado">
-                            CONOCER GRUPOS
-                        </a>
+                <p class="edad">3 a 5 años</p>
 
-                        <a href="#inscripcion" class="btn btn-amarillo">
-                            CONSULTAR CUPOS
-                        </a>
+                <p>
+                    Adaptación al medio acuático,
+                    confianza, flotación y primeros
+                    desplazamientos en el agua.
+                </p>
 
-                    </div>
+            </div>
+
+            <div class="tarjeta tarjeta-naranjo">
+
+                <div class="icono-grupo">🏊</div>
+
+                <h3>EXPLORADORES</h3>
+
+                <p class="edad">6 a 8 años</p>
+
+                <p>
+                    Desarrollo de habilidades acuáticas,
+                    respiración, coordinación y bases
+                    de la natación.
+                </p>
+
+            </div>
+
+            <div class="tarjeta tarjeta-amarilla">
+
+                <div class="icono-grupo">🌊</div>
+
+                <h3>NAVEGANTES</h3>
+
+                <p class="edad">9 a 13 años</p>
+
+                <p>
+                    Perfeccionamiento técnico,
+                    resistencia, coordinación y
+                    autonomía en el agua.
+                </p>
+
+            </div>
+
+
+</section>
+
+
+<!-- =========================
+     PLANES
+========================= -->
+
+<section class="seccion seccion-planes" id="planes">
+
+    <div class="contenedor">
+
+        <h2>NUESTROS PLANES</h2>
+
+        <p class="subtitulo">
+            Elige el plan que mejor se adapte
+            a tus necesidades.
+        </p>
+
+        <div class="contenedor-planes">
+
+            <div class="plan">
+
+                <div class="plan-header plan-rosa">
+                    PLAN 4 CLASES
+                </div>
+
+                <div class="plan-contenido">
+
+                    <strong>$50.000</strong>
+
+                    <span>
+                        1 clase por semana
+                    </span>
 
                 </div>
 
             </div>
 
-        </section>
 
+            <div class="plan plan-destacado">
 
-        <!-- GRUPOS -->
-        <section id="grupos" class="seccion">
+                <div class="recomendado">
+                    RECOMENDADO
+                </div>
 
-            <div class="contenedor">
+                <div class="plan-header plan-naranjo">
+                    PLAN 8 CLASES
+                </div>
 
-                <h2>NUESTROS GRUPOS</h2>
+                <div class="plan-contenido">
 
-                <p class="subtitulo">
-                    Cada grupo está pensado según la edad y etapa de aprendizaje.
-                </p>
+                    <strong>$85.000</strong>
 
-                <div class="contenedor-grupos">
-
-                    <div class="tarjeta tarjeta-rosada">
-
-                        <div class="icono-grupo">🫧</div>
-
-                        <h3>BURBUJITAS</h3>
-
-                        <p class="edad">
-                            3 a 5 años
-                        </p>
-
-                        <p>
-                            Adaptación al medio acuático, confianza,
-                            flotación y primeros desplazamientos.
-                        </p>
-
-                    </div>
-
-
-                    <div class="tarjeta tarjeta-naranjo">
-
-                        <div class="icono-grupo">🏊</div>
-
-                        <h3>EXPLORADORES</h3>
-
-                        <p class="edad">
-                            6 a 8 años
-                        </p>
-
-                        <p>
-                            Desarrollo de habilidades acuáticas,
-                            respiración, coordinación y bases de natación.
-                        </p>
-
-                    </div>
-
-
-                    <div class="tarjeta tarjeta-amarilla">
-
-                        <div class="icono-grupo">🌊</div>
-
-                        <h3>NAVEGANTES</h3>
-
-                        <p class="edad">
-                            9 a 13 años
-                        </p>
-
-                        <p>
-                            Perfeccionamiento técnico,
-                            resistencia, coordinación y autonomía en el agua.
-                        </p>
-
-                    </div>
+                    <span>
+                        2 clases por semana
+                    </span>
 
                 </div>
 
             </div>
 
-        </section>
 
+            <div class="plan">
 
-        <!-- PLANES -->
-        <section id="planes" class="seccion seccion-planes">
+                <div class="plan-header plan-amarillo">
+                    PLAN 12 CLASES
+                </div>
 
-            <div class="contenedor">
+                <div class="plan-contenido">
 
-                <h2>PLANES MENSUALES</h2>
+                    <strong>$110.000</strong>
 
-                <p class="subtitulo">
-                    Elige la frecuencia que mejor se acomode a ustedes.
-                </p>
-
-                <div class="contenedor-planes">
-
-                    <div class="plan">
-
-                        <div class="plan-header plan-rosa">
-                            4 CLASES
-                        </div>
-
-                        <div class="plan-contenido">
-
-                            <p>1 vez por semana</p>
-
-                            <strong>$50.000</strong>
-
-                            <span>mensual</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="plan plan-destacado">
-
-                        <div class="recomendado">
-                            MÁS ELEGIDO
-                        </div>
-
-                        <div class="plan-header plan-naranjo">
-                            8 CLASES
-                        </div>
-
-                        <div class="plan-contenido">
-
-                            <p>2 veces por semana</p>
-
-                            <strong>$85.000</strong>
-
-                            <span>mensual</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="plan">
-
-                        <div class="plan-header plan-amarillo">
-                            12 CLASES
-                        </div>
-
-                        <div class="plan-contenido">
-
-                            <p>3 veces por semana</p>
-
-                            <strong>$110.000</strong>
-
-                            <span>mensual</span>
-
-                        </div>
-
-                    </div>
+                    <span>
+                        3 clases por semana
+                    </span>
 
                 </div>
 
             </div>
 
-        </section>
+        </div>
+
+</section>
 
 
-        <!-- HORARIOS -->
-        <section id="horarios" class="seccion horarios">
+<!-- =========================
+     HORARIOS
+========================= -->
 
-            <div class="contenedor">
+<section class="seccion horarios" id="horarios">
 
-                <h2>HORARIOS DE CLASES</h2>
+    <div class="contenedor">
 
-                <p class="subtitulo">
-                    Revisa el horario correspondiente según la edad de tu hijo/a.
-                </p>
+        <h2>HORARIOS DE NATACIÓN</h2>
 
-                <div class="horarios-grid">
+        <p class="subtitulo">
+            Conoce los días y horarios
+            correspondientes a cada grupo.
+        </p>
 
-                    <!-- BURBUJITAS -->
-                    <div class="horario-card horario-burbujitas">
+        <div class="horarios-grid">
 
-                        <div class="horario-edad">
-                            3 - 5
-                            <span>años</span>
-                        </div>
+            <!-- BURBUJITAS -->
 
-                        <h3>BURBUJITAS</h3>
+            <div class="horario-card horario-burbujitas">
 
-                        <p class="descripcion-horario">
-                            Introducción al agua y técnicas básicas de flotación.
-                        </p>
-
-                        <div class="bloque-horario">
-
-                            <strong>
-                                Lunes, Miércoles y Viernes
-                            </strong>
-
-                            <p>
-                                17:00 a 18:00 hrs
-                            </p>
-
-                        </div>
-
-                        <div class="bloque-horario">
-
-                            <strong>
-                                Lunes, Miércoles y Viernes
-                            </strong>
-
-                            <p>
-                                18:00 a 19:00 hrs
-                            </p>
-
-                        </div>
-
-                        <div class="bloque-horario">
-
-                            <strong>Sábado</strong>
-
-                            <p>
-                                14:30 a 15:30 hrs
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- EXPLORADORES -->
-                    <div class="horario-card horario-exploradores">
-
-                        <div class="horario-edad">
-                            6 - 8
-                            <span>años</span>
-                        </div>
-
-                        <h3>EXPLORADORES</h3>
-
-                        <p class="descripcion-horario">
-                            Estilos básicos de natación y seguridad en el agua.
-                        </p>
-
-                        <div class="bloque-horario">
-
-                            <strong>
-                                Lunes, Miércoles y Viernes
-                            </strong>
-
-                            <p>
-                                17:00 a 18:00 hrs
-                            </p>
-
-                        </div>
-
-                        <div class="bloque-horario">
-
-                            <strong>
-                                Lunes, Miércoles y Viernes
-                            </strong>
-
-                            <p>
-                                18:00 a 19:00 hrs
-                            </p>
-
-                        </div>
-
-                        <div class="bloque-horario">
-
-                            <strong>
-                                Lunes y Miércoles
-                            </strong>
-
-                            <p>
-                                19:00 a 20:00 hrs
-                            </p>
-
-                        </div>
-
-                        <div class="bloque-horario">
-
-                            <strong>Sábado</strong>
-
-                            <p>
-                                14:30 a 15:30 hrs
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- NAVEGANTES -->
-                    <div class="horario-card horario-navegantes">
-
-                        <div class="horario-edad">
-                            9 - 13
-                            <span>años</span>
-                        </div>
-
-                        <h3>NAVEGANTES</h3>
-
-                        <p class="descripcion-horario">
-                            Perfeccionamiento de estilos y técnicas avanzadas.
-                        </p>
-
-                        <div class="bloque-horario">
-
-                            <strong>
-                                Lunes y Miércoles
-                            </strong>
-
-                            <p>
-                                19:00 a 20:00 hrs
-                            </p>
-
-                        </div>
-
-                        <div class="bloque-horario">
-
-                            <strong>Sábado</strong>
-
-                            <p>
-                                14:30 a 15:30 hrs
-                            </p>
-
-                        </div>
-
-                    </div>
-
+                <div class="horario-edad">
+                    3 a 5
+                    <span>años</span>
                 </div>
 
+                <h3>BURBUJITAS</h3>
 
-                <!-- BOTÓN WHATSAPP -->
-                <div class="contenedor-whatsapp">
+                <p class="descripcion-horario">
+                    Adaptación y confianza
+                    en el medio acuático.
+                </p>
 
-                    <h3>
-                        ¿Quieres reservar un cupo?
-                    </h3>
+                <div class="bloque-horario">
+
+                    <strong>
+                        Lunes, miércoles y viernes
+                    </strong>
 
                     <p>
-                        Escríbenos directamente por WhatsApp
+                        17:00 a 18:00 hrs
                     </p>
 
-                    <a
-                        href="https://wa.me/56950621684?text=Hola%20Fusión%20Tri%20Kids,%20quisiera%20información%20sobre%20las%20clases%20de%20natación."
-                        target="_blank"
-                        class="boton-whatsapp"
-                    >
-                        💬 Hablar por WhatsApp
-                    </a>
+                    <p>
+                        18:00 a 19:00 hrs
+                    </p>
+
+                </div>
+
+                <div class="bloque-horario">
+
+                    <strong>Sábado</strong>
+
+                    <p>
+                        14:30 a 15:30 hrs
+                    </p>
 
                 </div>
 
             </div>
 
-        </section>
 
+            <!-- EXPLORADORES -->
 
-        <!-- INSCRIPCIÓN -->
-        <section id="inscripcion" class="seccion">
+            <div class="horario-card horario-exploradores">
 
-            <div class="contenedor">
+                <div class="horario-edad">
+                    6 a 8
+                    <span>años</span>
+                </div>
 
-                <h2>INSCRIPCIÓN</h2>
+                <h3>EXPLORADORES</h3>
 
-                <p class="subtitulo">
-                    Completa tus datos y envíanos la solicitud por WhatsApp.
+                <p class="descripcion-horario">
+                    Desarrollo de habilidades
+                    y técnicas de natación.
                 </p>
 
+                <div class="bloque-horario">
 
-                <form id="formInscripcion">
+                    <strong>
+                        Lunes y miércoles
+                    </strong>
 
-                    <input
-                        type="text"
-                        id="apoderado"
-                        placeholder="Nombre del apoderado"
-                        required
-                    >
+                    <p>17:00 a 18:00 hrs</p>
+                    <p>18:00 a 19:00 hrs</p>
+                    <p>19:00 a 20:00 hrs</p>
 
-                    <input
-                        type="text"
-                        id="alumno"
-                        placeholder="Nombre del alumno/a"
-                        required
-                    >
+                </div>
 
-                    <input
-                        type="number"
-                        id="edadAlumno"
-                        placeholder="Edad"
-                        min="3"
-                        max="13"
-                        required
-                        oninput="actualizarGrupoYHorarios()"
-                    >
+                <div class="bloque-horario">
 
+                    <strong>Viernes</strong>
+                    <p>18:00 a 19:00 hrs</p>
 
-                    <div id="grupoAutomatico"></div>
+                </div>
 
+                <div class="bloque-horario">
 
-                   <select id="plan" required>
+                    <strong>Sábado</strong>
+                    <p>14:30 a 15:30 hrs</p>
 
-                        <option value="">
-                            Seleccionar plan
-                        </option>
+                </div>
 
-                        <option value="Clase de prueba - $18.000">
-                            Clase de prueba - $18.000
-                        </option>
+                <div class="bloque-horario">
 
-                        <option value="4 clases - $50.000">
-                            4 clases - $50.000
-                        </option>
+                    <strong>Domingo</strong>
+                    <p>14:00 a 15:00 hrs</p>
 
-                        <option value="8 clases - $85.000">
-                            8 clases - $85.000
-                        </option>
-
-                        <option value="12 clases - $110.000">
-                            12 clases - $110.000
-                        </option>
-
-                    </select>
-
-
-                    <select id="horario" required>
-
-                        <option value="">
-                            Primero ingresa la edad
-                        </option>
-
-                    </select>
-
-
-                    <button
-                        type="button"
-                        class="boton-inscripcion"
-                        onclick="inscribirWhatsApp()"
-                    >
-                        INSCRIBIRME POR WHATSAPP
-                    </button>
-
-                </form>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <div class="footer-contenido">
-
-            <div class="footer-logo">
-
-                <img
-                    src="img/logo.png.png"
-                    alt="Fusión Tri Kids"
-                >
+                </div>
 
             </div>
 
 
-            <div class="footer-info">
+            <!-- NAVEGANTES -->
 
-                <h3>Fusión Tri Kids</h3>
+            <div class="horario-card horario-navegantes">
 
-                <p>
-                    Clases de natación infantil
+                <div class="horario-edad">
+                    9 a 13
+                    <span>años</span>
+                </div>
+
+                <h3>NAVEGANTES</h3>
+
+                <p class="descripcion-horario">
+                    Perfeccionamiento técnico
+                    y autonomía en el agua.
                 </p>
 
-            </div>
+                <div class="bloque-horario">
 
+                    <strong>
+                        Lunes y miércoles
+                    </strong>
 
-            <div class="footer-info">
+                    <p>19:00 a 20:00 hrs</p>
 
-                <h3>Contacto</h3>
+                </div>
 
-                <p>
-                    Consulta horarios y cupos disponibles.
-                </p>
+                <div class="bloque-horario">
+
+                    <strong>Sábado</strong>
+                    <p>14:30 a 15:30 hrs</p>
+
+                </div>
+
+                <div class="bloque-horario">
+
+                    <strong>Domingo</strong>
+                    <p>14:00 a 15:00 hrs</p>
+
+                </div>
 
             </div>
 
         </div>
 
+        
+<div class="horario-card horario-adultos">
 
-        <div class="footer-copy">
-            © 2026 Fusión Tri Kids
+    <div class="horario-edad">
+        14+
+        <span>años</span>
+    </div>
+
+    <h3>JÓVENES Y ADULTOS</h3>
+
+    <p class="descripcion-horario">
+        Clases de natación para adultos,
+        desde nivel inicial.
+    </p>
+
+    <div class="bloque-horario">
+
+        <strong>Lunes</strong>
+
+        <p>20:00 a 21:00 hrs</p>
+
+    </div>
+
+    <div class="bloque-horario">
+
+        <strong>Valor mensual</strong>
+
+        <p>$70.000</p>
+
+    </div>
+
+</div>
+
+        <!-- CONTACTO WHATSAPP -->
+
+        <div class="contenedor-whatsapp">
+
+            <h3>¿TIENES DUDAS?</h3>
+
+            <p>
+                Escríbenos para consultar
+                disponibilidad de cupos.
+            </p>
+
+            <a
+                href="https://wa.me/56950621684"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="boton-whatsapp"
+            >
+                CONTACTAR POR WHATSAPP
+            </a>
+
         </div>
 
-    </footer>
+    </div>
+
+</section>
 
 
-    <script src="script.js"></script>
+<!-- =========================
+     INSCRIPCIÓN
+========================= -->
+
+<section class="seccion" id="formulario-inscripcion">
+
+    <div class="contenedor">
+
+        <h2>INSCRIPCIÓN</h2>
+
+        <p class="subtitulo">
+            Completa los datos para solicitar
+            tu inscripción.
+        </p>
+
+        <form
+            id="formInscripcion"
+            onsubmit="inscribirWhatsApp(event)"
+        >
+
+            <input
+                type="text"
+                id="apoderado"
+                placeholder="Nombre del apoderado/a o contacto"
+                required
+            >
+
+            <input
+                type="text"
+                id="alumno"
+                placeholder="Nombre del alumno/a"
+                required
+            >
+
+            <input
+                type="number"
+                id="edadAlumno"
+                placeholder="Edad del alumno/a"
+                min="3"
+                step="1"
+                oninput="actualizarGrupoYHorarios()"
+                required
+            >
+
+            <div id="grupoAutomatico"></div>
+
+            <select
+                id="plan"
+                onchange="actualizarGrupoYHorarios()"
+                required
+            >
+
+                <option value="">
+                    Seleccionar plan
+                </option>
+
+            </select>
+
+            <div id="horario"></div>
+
+            <div id="resumenSeleccion"></div>
+
+            <button
+                type="submit"
+                class="boton-inscripcion"
+            >
+                INSCRIBIRME POR WHATSAPP
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-contenido">
+
+        <div class="footer-logo">
+            <img src="img/logo.png.png" alt="Fusión Tri Kids">
+        </div>
+
+        <div class="footer-info">
+
+            <h3>Fusión Tri Kids</h3>
+
+            <p>
+                Natación infantil y adultos.
+            </p>
+
+        </div>
+
+        <div class="footer-info">
+
+            <h3>Contacto</h3>
+
+            <p>
+                +56 9 5062 1684
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-copy">
+        © Fusión Tri Kids. Todos los derechos reservados.
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+// HORARIOS POR GRUPO
+
+const horariosPorGrupo = {
+
+    Burbujitas: [
+        ["Lunes", "17:00 a 18:00"],
+        ["Miércoles", "17:00 a 18:00"],
+        ["Viernes", "17:00 a 18:00"],
+        ["Lunes", "18:00 a 19:00"],
+        ["Miércoles", "18:00 a 19:00"],
+        ["Viernes", "18:00 a 19:00"],
+        ["Sábado", "14:30 a 15:30"]
+    ],
+
+    Exploradores: [
+        ["Lunes", "17:00 a 18:00"],
+        ["Miércoles", "17:00 a 18:00"],
+        ["Lunes", "18:00 a 19:00"],
+        ["Miércoles", "18:00 a 19:00"],
+        ["Viernes", "18:00 a 19:00"],
+        ["Lunes", "19:00 a 20:00"],
+        ["Miércoles", "19:00 a 20:00"],
+        ["Sábado", "14:30 a 15:30"],
+        ["Domingo", "14:00 a 15:00"]
+    ],
+
+    Navegantes: [
+        ["Lunes", "19:00 a 20:00"],
+        ["Miércoles", "19:00 a 20:00"],
+        ["Sábado", "14:30 a 15:30"],
+        ["Domingo", "14:00 a 15:00"]
+    ],
+
+    Adultos: [
+        ["Lunes", "20:00 a 21:00"]
+    ]
+
+};
+
+
+// IDENTIFICAR GRUPO
+
+function obtenerGrupo(edad) {
+
+    if (!Number.isInteger(edad) || edad < 3) {
+        return "";
+    }
+
+    if (edad <= 5) {
+        return "Burbujitas";
+    }
+
+    if (edad <= 8) {
+        return "Exploradores";
+    }
+
+    if (edad <= 13) {
+        return "Navegantes";
+    }
+
+    return "Adultos";
+}
+
+
+// ACTUALIZAR GRUPO Y HORARIOS
+
+function actualizarGrupoYHorarios() {
+
+    const campoEdad =
+        document.getElementById("edadAlumno").value;
+
+    const edad = Number(campoEdad);
+
+    const grupo =
+        campoEdad !== "" ? obtenerGrupo(edad) : "";
+
+    const grupoAutomatico =
+        document.getElementById("grupoAutomatico");
+
+    const plan =
+        document.getElementById("plan");
+
+    const horario =
+        document.getElementById("horario");
+
+    const resumen =
+        document.getElementById("resumenSeleccion");
+
+    const grupoAnterior = plan.dataset.grupo || "";
+    const planAnterior = plan.value;
+
+    grupoAutomatico.replaceChildren();
+    horario.replaceChildren();
+    resumen.replaceChildren();
+
+    plan.replaceChildren(
+        new Option("Seleccionar plan", "")
+    );
+
+    plan.dataset.grupo = grupo;
+
+    if (!grupo) {
+        return;
+    }
+
+    const aviso = document.createElement("div");
+
+    aviso.className = "grupo-detectado";
+
+    aviso.append("Grupo correspondiente: ");
+
+    const destacado = document.createElement("strong");
+
+    destacado.textContent = grupo;
+
+    aviso.appendChild(destacado);
+    grupoAutomatico.appendChild(aviso);
+
+    const esAdulto = grupo === "Adultos";
+
+    const planes = esAdulto
+        ? [
+            ["4", "4 clases mensuales - $70.000"]
+        ]
+        : [
+            ["4", "4 clases mensuales - $50.000"],
+            ["8", "8 clases mensuales - $85.000"],
+            ["12", "12 clases mensuales - $110.000"]
+        ];
+
+    planes.forEach(function(item) {
+
+        plan.add(
+            new Option(item[1], item[0])
+        );
+
+    });
+
+    if (esAdulto) {
+
+        plan.value = "4";
+
+    } else if (
+        grupoAnterior === grupo &&
+        planes.some(item => item[0] === planAnterior)
+    ) {
+
+        plan.value = planAnterior;
+    }
+
+    if (!plan.value) {
+
+        const avisoPlan = document.createElement("p");
+
+        avisoPlan.className = "ayuda";
+
+        avisoPlan.textContent =
+            "Selecciona un plan para elegir tus horarios.";
+
+        horario.appendChild(avisoPlan);
+
+        return;
+    }
+
+    const cantidadDias = Number(plan.value) / 4;
+
+    const titulo = document.createElement("h3");
+
+    titulo.textContent =
+        cantidadDias === 1
+            ? "Selecciona tu día y horario"
+            : "Selecciona " + cantidadDias + " días y horarios";
+
+    horario.appendChild(titulo);
+
+    const descripcion = document.createElement("p");
+
+    descripcion.className = "ayuda";
+
+    descripcion.textContent =
+        "Selecciona los días y horarios por separado.";
+
+    horario.appendChild(descripcion);
+
+    const opciones = horariosPorGrupo[grupo];
+
+    const diasDisponibles = [
+        ...new Set(opciones.map(opcion => opcion[0]))
+    ];
+
+    const selectores = [];
+
+    for (let i = 0; i < cantidadDias; i++) {
+
+        const bloque = document.createElement("div");
+
+        bloque.className = "selector-horario";
+
+        const etiqueta = document.createElement("label");
+
+        etiqueta.textContent = "Día " + (i + 1);
+
+        const selectorDia = document.createElement("select");
+
+        selectorDia.className = "dia-seleccionado";
+
+        selectorDia.setAttribute(
+            "aria-label",
+            "Seleccionar día " + (i + 1)
+        );
+
+        selectorDia.add(
+            new Option("Seleccionar día", "")
+        );
+
+        diasDisponibles.forEach(function(dia) {
+
+            selectorDia.add(
+                new Option(dia, dia)
+            );
+
+        });
+
+        const selectorHora = document.createElement("select");
+
+        selectorHora.className = "hora-seleccionada";
+
+        selectorHora.setAttribute(
+            "aria-label",
+            "Seleccionar horario del día " + (i + 1)
+        );
+
+        selectorHora.add(
+            new Option("Seleccionar horario", "")
+        );
+
+        selectorHora.disabled = true;
+
+        selectorDia.addEventListener("change", function() {
+
+            selectorHora.replaceChildren(
+                new Option("Seleccionar horario", "")
+            );
+
+            opciones
+                .filter(opcion => opcion[0] === selectorDia.value)
+                .forEach(function(opcion) {
+
+                    selectorHora.add(
+                        new Option(
+                            opcion[1] + " hrs",
+                            opcion[1]
+                        )
+                    );
+
+                });
+
+            selectorHora.disabled = !selectorDia.value;
+
+            actualizarDiasDisponibles();
+
+            actualizarResumen();
+        });
+
+        selectorHora.addEventListener(
+            "change",
+            actualizarResumen
+        );
+
+        bloque.appendChild(etiqueta);
+        bloque.appendChild(selectorDia);
+        bloque.appendChild(selectorHora);
+
+        horario.appendChild(bloque);
+
+        selectores.push(selectorDia);
+    }
+
+    function actualizarDiasDisponibles() {
+
+        const diasSeleccionados = selectores
+            .map(selector => selector.value)
+            .filter(Boolean);
+
+        selectores.forEach(function(selector) {
+
+            Array.from(selector.options).forEach(function(opcion) {
+
+                opcion.disabled = Boolean(
+                    opcion.value &&
+                    opcion.value !== selector.value &&
+                    diasSeleccionados.includes(opcion.value)
+                );
+
+            });
+
+        });
+    }
+
+    if (esAdulto) {
+
+        const selectorDia = selectores[0];
+
+        selectorDia.value = "Lunes";
+
+        selectorDia.dispatchEvent(
+            new Event("change")
+        );
+
+        const selectorHora =
+            horario.querySelector(".hora-seleccionada");
+
+        selectorHora.value = "20:00 a 21:00";
+
+        selectorDia.disabled = true;
+        selectorHora.disabled = true;
+    }
+
+    actualizarResumen();
+}
+
+
+// OBTENER HORARIOS SELECCIONADOS
+
+function obtenerHorariosSeleccionados() {
+
+    return Array.from(
+        document.querySelectorAll(".selector-horario")
+    )
+    .map(function(bloque) {
+
+        return {
+
+            dia: bloque.querySelector(
+                ".dia-seleccionado"
+            ).value,
+
+            hora: bloque.querySelector(
+                ".hora-seleccionada"
+            ).value
+
+        };
+
+    })
+    .filter(function(item) {
+
+        return item.dia && item.hora;
+
+    });
+}
+
+
+// ACTUALIZAR RESUMEN
+
+function actualizarResumen() {
+
+    const resumen =
+        document.getElementById("resumenSeleccion");
+
+    resumen.replaceChildren();
+
+    const campoEdad =
+        document.getElementById("edadAlumno").value;
+
+    const grupo = campoEdad !== ""
+        ? obtenerGrupo(Number(campoEdad))
+        : "";
+
+    const plan =
+        document.getElementById("plan").value;
+
+    if (!grupo || !plan) {
+        return;
+    }
+
+    const valores = {
+        "4": grupo === "Adultos"
+            ? "$70.000"
+            : "$50.000",
+        "8": "$85.000",
+        "12": "$110.000"
+    };
+
+    const caja = document.createElement("div");
+
+    caja.className = "resumen";
+
+    const titulo = document.createElement("strong");
+
+    titulo.textContent = "Resumen de inscripción";
+
+    caja.appendChild(titulo);
+
+    const informacion = document.createElement("p");
+
+    informacion.textContent =
+        grupo + " | " +
+        plan + " clases mensuales | " +
+        valores[plan];
+
+    caja.appendChild(informacion);
+
+    obtenerHorariosSeleccionados().forEach(function(item) {
+
+        const parrafo = document.createElement("p");
+
+        parrafo.textContent =
+            item.dia + " - " + item.hora + " hrs";
+
+        caja.appendChild(parrafo);
+    });
+
+    resumen.appendChild(caja);
+}
+
+
+// INSCRIPCIÓN POR WHATSAPP
+
+function inscribirWhatsApp(event) {
+
+    if (event) {
+        event.preventDefault();
+    }
+
+    const apoderado =
+        document.getElementById("apoderado").value.trim();
+
+    const alumno =
+        document.getElementById("alumno").value.trim();
+
+    const campoEdad =
+        document.getElementById("edadAlumno").value;
+
+    const edad = Number(campoEdad);
+
+    const grupo = campoEdad !== ""
+        ? obtenerGrupo(edad)
+        : "";
+
+    const plan =
+        document.getElementById("plan").value;
+
+    if (
+        !apoderado ||
+        !alumno ||
+        !grupo ||
+        !["4", "8", "12"].includes(plan) ||
+        (grupo === "Adultos" && plan !== "4")
+    ) {
+
+        alert("Por favor completa todos los datos.");
+
+        return;
+    }
+
+    const cantidadDias = Number(plan) / 4;
+
+    const horarios = obtenerHorariosSeleccionados();
+
+    if (horarios.length !== cantidadDias) {
+
+        alert(
+            "Debes seleccionar " +
+            cantidadDias +
+            " día(s) con sus respectivos horarios."
+        );
+
+        return;
+    }
+
+    const dias = horarios.map(item => item.dia);
+
+    if (new Set(dias).size !== horarios.length) {
+
+        alert("No puedes seleccionar el mismo día dos veces.");
+
+        return;
+    }
+
+    const horariosValidos = horarios.every(function(item) {
+
+        return horariosPorGrupo[grupo].some(function(opcion) {
+
+            return opcion[0] === item.dia &&
+                   opcion[1] === item.hora;
+
+        });
+    });
+
+    if (!horariosValidos) {
+
+        alert(
+            "Uno de los horarios seleccionados no corresponde al grupo."
+        );
+
+        return;
+    }
+
+    const valores = {
+        "4": grupo === "Adultos"
+            ? "$70.000"
+            : "$50.000",
+        "8": "$85.000",
+        "12": "$110.000"
+    };
+
+    const horariosTexto = horarios
+        .map(function(item) {
+
+            return item.dia + " " + item.hora + " hrs";
+
+        })
+        .join("\n");
+
+    const mensaje =
+        "Hola Fusión Tri Kids 👋\n\n" +
+        "Quiero solicitar una inscripción.\n\n" +
+        "Apoderado/a o contacto: " + apoderado + "\n" +
+        "Alumno/a: " + alumno + "\n" +
+        "Edad: " + edad + " años\n" +
+        "Grupo: " + grupo + "\n" +
+        "Plan: " + plan + " clases mensuales\n" +
+        "Valor: " + valores[plan] + "\n\n" +
+        "Días y horarios seleccionados:\n" +
+        horariosTexto;
+
+    const numeroWhatsApp = "56950621684";
+
+    const url =
+        "https://wa.me/" +
+        numeroWhatsApp +
+        "?text=" +
+        encodeURIComponent(mensaje);
+
+    window.open(url, "_blank");
+}
+
+</script>
 
 </body>
-
 </html>
